@@ -1,3 +1,6 @@
+%% @Author: Solayman Hossain Emon
+%% @email: solayman.emon07@gmail.com
+
 % Construct a square matrix A 
 
 [U, X] = qr(randn(80)); % Set U to a random orthogonal matrix

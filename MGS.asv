@@ -1,3 +1,5 @@
+%% @Author: Solayman Hos
+
 function[Q,R]= MGS(A)
 [m,n] = size(A);
 Q = zeros(m,n);
@@ -10,7 +12,7 @@ end
 
 for i = 1:n
     R(i,i) = norm(v(:,i));
-    Q(:,i) = v(i,:)/R(i,i);
+    Q(:,i) = v(:,i)/R(i,i);
     for j = i + 1:n
         R(i,j) = Q(:,i)'*v(:,j);
         v(:,j) =  v(:,j) - R(i,j)*Q(:,i);

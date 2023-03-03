@@ -1,7 +1,9 @@
+%% @Author: Solayman Hossain Emon
+%% @email: solayman.emon07@gmail.com
 
-
-function[Q,R]= CGS(A)
+function[Q,R]= CGS(A) % Classical Gram-Schmidt (CGS)
 [m,n] = size(A);
+
 Q = zeros(m,n);
 R = zeros(n,n);
 v = zeros(n,n);
