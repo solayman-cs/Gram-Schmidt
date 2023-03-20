@@ -1,12 +1,12 @@
 %% @Author: Solayman Hossain Emon
 %% @email: solayman.emon07@gmail.com
 
-function[Q,R]= MGS(A) % Modified Gram-Schmidt (MGS)
+function[Q,R] = MGS(A) % Modified Gram-Schmidt (MGS)
 [m,n] = size(A);
 
 Q = zeros(m,n);
 R = zeros(n,n);
-v = zeros(n,n);
+v = A;
 
 for j = 1:n
     v(:,j) = A(:,j);
