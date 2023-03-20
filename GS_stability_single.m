@@ -28,7 +28,7 @@ hold on;
 semilogy(diag(RM), 'r*');
 
 legend('Singular values', 'CLGS r_{jj}', 'MGS r_{jj}')
-title('Gram-Schmidt in double precision')
+title('Gram-Schmidt in single precision')
 xlabel('j')
 ylabel('r_{jj}')
 
